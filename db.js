@@ -1,7 +1,7 @@
 var musicdb;
 
 (function() {
-  window.addEventListener('localized', function onlocalized() {
+  window.addEventListener('load', function onlocalized() {
     if (!musicdb)
       init();
   });
