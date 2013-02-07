@@ -1,0 +1,132 @@
+@font-face { font-family: bebas; src: url(BebasNeue.otf);}
+* { -moz-box-sizing: border-box; }
+  
+body {
+    font-family: bebas;
+    background: white;
+    max-width: 400px;
+    margin: auto;
+}
+
+h1, h2 {
+    font-weight: normal;
+}
+
+h1 {
+    margin: 25px 0 0 10px;
+}
+
+h2 {
+    margin: 0 10px;
+}
+
+ul {
+    padding: 0;
+}
+
+img {
+    width: 100px;
+    height: auto;
+    background: #CCC;
+}
+
+li {
+    list-style: none;
+    border-top: 1px solid black;
+    padding: 20px 0;
+    margin: 0 10px;
+    position: relative;
+}
+
+li:last-of-type {
+    border-bottom: 1px solid black;
+}
+
+li > * {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.count {
+    float: right;
+}
+
+.count:before {
+    content: "x";
+    font-size: 70%;
+}
+
+/* Player */
+
+button {
+    display: inline-block;
+    vertical-align: top;
+    background: transparent;
+    border-width: 0;
+    width: 60px; height: 60px;
+}
+
+button:active {
+    transform: scale(0.8);
+}
+
+button:before {
+    margin-top: -2px;
+    display: block;
+    font-weight: bold;
+    color: black;
+}
+
+.player {
+    width: 180px;
+    display: none;
+    position: absolute;
+    top: 0; left: 0;
+    left: auto; right: 0;
+    top: 50px;
+}
+
+.playing > .player {
+    display: block;
+}
+
+.button-play {
+    border: 4px solid black;
+    border-radius: 50%;
+}
+
+.button-play:before {
+    content: "";
+    width: 0; height: 0;
+    border: 12px solid transparent;
+    border-left: 16px solid black;
+    border-right: 0px solid transparent;
+    margin-left: 10px;
+}
+
+
+.button-next:before {
+    content: "next";
+}
+
+.button-prev:before {
+    content: "prev";
+}
+
+progress {
+    -moz-appearance: none;
+    width: 100%;
+    display: block;
+    border: 0;
+    background: black;
+    height: 2px;
+    margin-top: 5px;
+}
+
+progress::-moz-progress-bar {
+    background: #F06;
+}
+
+#template {
+  display: none;
+}

@@ -1,0 +1,3 @@
+var playerView = {
+  stop: function() {},
+}
