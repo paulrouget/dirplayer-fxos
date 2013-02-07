@@ -7,7 +7,7 @@ var musicdb;
   });
 
   function init() {
-    musicdb = new MediaDB('music', null, {},
+    musicdb = new MediaDB('music', null, {
       batchSize: 1,
       autoscan: false,
       version: 1
