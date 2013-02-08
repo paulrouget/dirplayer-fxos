@@ -18,6 +18,10 @@ h1 {
 
 h2 {
     margin: 0 10px;
+    white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    width: calc(100% - 140px);
 }
 
 ul {
@@ -26,7 +30,7 @@ ul {
 
 img {
     width: 100px;
-    height: auto;
+    height: 100px;
     background: #CCC;
 }
 
@@ -78,12 +82,13 @@ button:before {
 }
 
 .player {
-    width: 180px;
+    width: calc(100% - 105px);
     display: none;
     position: absolute;
-    top: 0; left: 0;
-    left: auto; right: 0;
+    top: 0;
+    right: 0;
     top: 50px;
+    text-align: center;
 }
 
 .playing > .player {
